@@ -1,6 +1,6 @@
-#+TITLE:   Sean's Emacs Configuration
+#+TITLE:   Matthew's Emacs config --forked from Sean's Emacs Configuration
 #+AUTHOR:  Sean Duckett
-#+EMAIL:   sduckett@gmail.com
+#+EMAIL:   matthewmacleod28@gmail.com
 #+LANGUAGE: en
 #+PROPERTY: header-args :tangle yes
 #+HTML_HEAD: <link rel="stylesheet" href="http://dakrone.github.io/org.css" type="text/css" />
@@ -111,7 +111,7 @@ things add hooks that don't work if packages aren't installed.
   ;; (setq package-enable-at-startup nil)
 
   (defvar smd/packages-to-install
-    '(use-package gist fuzzy popup company expand-region smex ido-vertical-mode ido-ubiquitous
+    '(use-package evil elixir-mode gist fuzzy popup company expand-region smex ido-vertical-mode ido-ubiquitous
       yasnippet projectile multiple-cursors ace-jump-mode
       idle-highlight-mode highlight-symbol highlight-numbers highlight-quoted
       org htmlize gnuplot-mode gnuplot wc-mode ssh-config-mode flycheck flycheck-tip
@@ -813,6 +813,14 @@ This is a shot at getting that behavior in Emacs.
 
   (global-set-key [(control shift return)] 'smd/smart-open-line-above)
 #+END_SRC
+
+;; turn on evil mode automatically
+;; to turn off do M-x turn-off-evil-mode
+#+BEGIN_SRC emacs-lisp
+(require 'evil)
+(evil-mode t)
+#+END_SRC
+
 
 * Finalizers
 Turn off debugging, now that initialization has ended
