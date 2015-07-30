@@ -15,6 +15,8 @@
 (add-to-list 'package-pinned-packages '(clj-refactor . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(elixir-mode . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(evil . "melpa-stable") t)
+(add-to-list 'package-pinned-packages '(alchemist . "melpa-stable") t)
+(add-to-list 'package-pinned-packages '(erlang . "melpa-stable") t)
 
 (package-initialize)
 

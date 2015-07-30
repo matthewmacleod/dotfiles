@@ -111,7 +111,7 @@ things add hooks that don't work if packages aren't installed.
   ;; (setq package-enable-at-startup nil)
 
   (defvar smd/packages-to-install
-    '(use-package evil elixir-mode gist fuzzy popup company expand-region smex ido-vertical-mode ido-ubiquitous
+    '(use-package evil elixir-mode alchemist erlang gist fuzzy popup company expand-region smex ido-vertical-mode ido-ubiquitous
       yasnippet projectile multiple-cursors ace-jump-mode
       idle-highlight-mode highlight-symbol highlight-numbers highlight-quoted
       org htmlize gnuplot-mode gnuplot wc-mode ssh-config-mode flycheck flycheck-tip
